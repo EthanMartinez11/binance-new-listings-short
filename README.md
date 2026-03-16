@@ -27,14 +27,6 @@ The script saves:
 
 ## Tech
 Python, pandas, NumPy, matplotlib, requests
-
-## How to run
-```bash
-pip install -r requirements.txt
-python src/backtest_binance_new_listings_short.py
-## Example results
-
-![Equity curve](results/equity_vs_btc.png)
 ## How to run
 
 Install dependencies:
@@ -52,3 +44,11 @@ as a liquidity event.
 
 This strategy attempts to capture that effect by shorting new perpetual
 futures listings shortly after launch.
+## How to run
+```bash
+pip install -r requirements.txt
+python src/backtest_binance_new_listings_short.py
+## Example results
+
+![Equity curve](results/equity_vs_btc.png)
+
