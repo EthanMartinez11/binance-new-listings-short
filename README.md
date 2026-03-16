@@ -1,7 +1,6 @@
 # Binance New Listings Short Strategy
 
-Backtest of a short-only strategy on newly listed Binance USDT perpetual futures.
-
+Backtest of a short strategy on newly listed Binance USDT perpetual futures.
 ## Idea
 The strategy shorts new perpetual listings after a short delay, but only if the first daily candle after listing is red.
 
@@ -33,4 +32,23 @@ Python, pandas, NumPy, matplotlib, requests
 ```bash
 pip install -r requirements.txt
 python src/backtest_binance_new_listings_short.py
-![Equity Curve](output/equity_vs_btc.png)
+## Example results
+
+![Equity curve](results/equity_vs_btc.png)
+## How to run
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the backtest:
+
+python src/backtest.py
+## Strategy intuition
+
+New crypto listings often experience strong selling pressure after launch.
+Early investors and private round participants frequently use the listing
+as a liquidity event.
+
+This strategy attempts to capture that effect by shorting new perpetual
+futures listings shortly after launch.
